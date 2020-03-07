@@ -2,6 +2,8 @@
 
 Let us say you want users the privilege to launch stack, but only through cloudformation. How do you achieve it. We can provide this type of authorization using the `aws:CalledVia` condition key. 
 
+![Restrict EC2 Launch Only through Clouformation](images/restrict-ec2-launch-to-clouformation.png)
+
 1. ## ⚙️ Prerequisites
 
     This demo, instructions, scripts and cloudformation template is designed to be run in `us-east-1`. With few modifications you can try it out in other regions as well(_Not covered here_).
