@@ -1,6 +1,6 @@
-# Restrict EC2 Launch Only through Clouformation
+# Restrict EC2 Launch Only through Cloudformation
 
-Let us say you want users the privilege to launch stack, but only through cloudformation. How do you achieve it. We can provide this type of authorization using the `aws:CalledVia` condition key. 
+Let us say you want users the privilege to launch stack which will deploy an ec2 instance for you, but only through cloudformation. How do you achieve it. We can provide this type of authorization using the `aws:CalledVia` condition key. 
 
 ![Restrict EC2 Launch Only through Clouformation](images/restrict-ec2-launch-to-clouformation.png)
 
@@ -31,14 +31,14 @@ Let us say you want users the privilege to launch stack, but only through cloudf
     - Create a new IAM User
     - Create a permission with the policy provided here `least-privileged-permissions.json`
     - Attach the policy IAM User
-    - Launch the clouformation template
+    - Launch the cloudformation template
       - Should launch successfully
     - Try to launch an instance with GUI/CLI it should fail
     
 
 1. ## 🧹 CleanUp
 
-    If you want to destroy all the resources created by the stack, Execute the below command to delete the stack, or _you can delete the stack from console as well_. This is not an exhaustive list, please carry out other necessary steps as maybe applicable to your needs.
+    If you want to destroy all the resources created by the stack, _you can delete the cloudformationstack, permissions and IAM users from console _. Please carry out other necessary steps as maybe applicable to your needs.
 
 ## 👋 Buy me a coffee
 
